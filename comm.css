@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  font-family: "Pretendard";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 1200px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 30px;
+  padding: 50px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.a h2 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.a ul {
+  display: flex;
+  gap: 20px;
+}
+
+.a ul img {
+  width: 100%;
+  box-shadow: rgb(219, 219, 219) 0px 0px 5px;
+  border-radius: 10px;
+}
