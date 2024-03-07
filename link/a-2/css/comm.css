@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+  font-family: "Pretendard";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 1200px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.gnb {
+  text-align: center;
+}
+
+.gnb-1depth {
+  display: flex;
+}
+
+.gnb-1depth > li {
+  width: 100px;
+}
+
+.gnb-1depth > li > a:hover {
+  background-color: #23a920;
+  color: white;
+  font-weight: bold;
+}
+
+.gnb-1depth > li > a {
+  display: block;
+  line-height: 100px;
+}
+
+.gnb-2depth {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+}
+
+.gnb-2depth > li {
+  background-color: #23a920;
+  width: 100px;
+}
+
+.gnb-2depth > li > a {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.gnb-2depth > li > a:hover {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+}
+
+.gnb-bg {
+  position: absolute;
+  width: 1200px;
+  height: 150px;
+  top: 100px;
+  left: 0;
+  background-color: #23a920;
+}
+
+.logo img {
+  width: 200px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+.sliderWrap {
+  display: flex;
+}
+
+.sliderWrap .slider img {
+  vertical-align: top;
+}
+
+#main {
+  display: flex;
+}
+
+.notice {
+  width: 30%;
+  height: 200px;
+  padding: 20px;
+}
+
+.notice h2 {
+  background: #23a920;
+  width: 100px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.notice ul {
+  padding-top: 10px;
+  border-top: 1px solid #23a920;
+}
+
+.notice ul li {
+  padding: 6px 0;
+}
+
+.gallery {
+  width: 35%;
+  height: 200px;
+  padding: 20px;
+}
+
+.gallery h2 {
+  background: #23a920;
+  width: 100px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.gallery ul {
+  padding-top: 10px;
+  border-top: 1px solid #23a920;
+  display: flex;
+  gap: 10px;
+}
+
+.gallery ul li {
+  width: 33.333%;
+}
+
+.gallery ul li img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.banner {
+  width: 35%;
+  height: 200px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.ft-logo img {
+  width: 200px;
+  height: 40px;
+}
+
+.modal {
+  width: 600px;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 1.4;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 1000;
+}
+
+.modal h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal button {
+  float: right;
+  padding: 5px;
+  background: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 700px;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

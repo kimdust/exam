@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  font-family: "Pretendard";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 1200px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#header h1 a img {
+  width: 200px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.gnb-1depth {
+  display: flex;
+  text-align: center;
+}
+
+.gnb-1depth > li {
+  width: 150px;
+}
+
+.gnb-1depth > li > a:hover {
+  background-color: red;
+  color: white;
+}
+
+.gnb-1depth > li > a {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+}
+
+.gnb-2depth {
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+}
+
+.gnb-2depth > li {
+  background: white;
+}
+
+.gnb-2depth > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.gnb-2depth > li > a:hover {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+
+#slider {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.sliderWrap .slider {
+  position: relative;
+}
+
+.sliderWrap .slider img {
+  vertical-align: top;
+}
+
+.board {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.board-right {
+  display: flex;
+  width: 30%;
+  height: 200px;
+  position: relative;
+  padding: 20px;
+}
+
+.tab-btn {
+  display: flex;
+}
+.tab-btn button {
+  background-color: rgb(187, 187, 187);
+  color: white;
+  border: none;
+  width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.notice {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+}
+
+.notice > li {
+  padding: 4px 15px;
+}
+
+.gallery {
+  position: absolute;
+  left: 25px;
+  top: 60px;
+  display: flex;
+}
+
+.gallery > li > img {
+  width: 100px;
+}
+
+.banner {
+  width: 35%;
+  height: 200px;
+}
+
+.banner > img {
+  width: 100%;
+}
+
+.link {
+  width: 35%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.link ul li {
+  width: 30%;
+}
+
+.link ul li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link ul li img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ft-logo img {
+  width: 200px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.sns {
+  display: flex;
+  padding: 10px;
+}
+
+.sns a img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.modal {
+  width: 600px;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 1.4;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 1000;
+}
+
+.modal h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal button {
+  float: right;
+  padding: 5px;
+  background: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 700px;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
