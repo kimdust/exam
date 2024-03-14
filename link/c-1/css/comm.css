@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  font-family: "Pretendard";
+}
+
+.wrap {
+  width: 1000px;
+  display: flex;
+}
+
+#header {
+  width: 200px;
+  height: 650px;
+  background: #f0f0f0;
+}
+
+.inner {
+  width: 800px;
+}
+
+#slide {
+  width: 100%;
+  height: 350px;
+  background: #dddddd;
+}
+
+#main {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.tab {
+  width: 35%;
+  height: 200px;
+  background: #d1d1d1;
+}
+
+.banner {
+  width: 35%;
+  height: 200px;
+  background: #c2c2c2;
+}
+
+.link {
+  width: 30%;
+  height: 200px;
+  background: #b6b6b6;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #aaaaaa;
+}

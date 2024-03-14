@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  font-family: "Pretendard";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background: #d5ffde;
+  display: flex;
+  justify-content: center;
+}
+
+.headerWrap {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 img {
+  width: 200px;
+  height: 40px;
+}
+
+.gnb {
+  position: relative;
+}
+
+.gnb-1depth {
+  display: flex;
+}
+
+.gnb-1depth li {
+  width: 130px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.gnb-1depth li:hover {
+  background: #4fbc63;
+}
+
+.gnb-2depth {
+  position: absolute;
+  background: white;
+  height: 160px;
+  z-index: 100;
+}
+
+.gnb-2depth li a {
+  display: block;
+  width: 130px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.gnb-2depth li a:hover {
+  background: #4fbc63;
+}
+
+#slide {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.sliderWrap {
+  display: flex;
+}
+
+.sliderWrap .slider {
+  position: relative;
+}
+
+#main {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+
+.tab {
+  width: 30%;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+}
+
+.tab-btn {
+  display: flex;
+}
+
+.tab-btn button {
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px 10px 0 0;
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.notice {
+  padding: 10px 0;
+  border-top: 1px solid #4fbc63;
+}
+
+.notice ul li {
+  padding: 6px 0;
+}
+
+.notice ul li:first-child {
+  cursor: pointer;
+}
+
+.gallery {
+  position: absolute;
+  top: 49px;
+  padding-top: 15px;
+  border-top: 1px solid #4fbc63;
+  width: 320px;
+}
+
+.gallery ul {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery ul li img {
+  width: 100%;
+}
+
+.banner {
+  width: 35%;
+  height: 200px;
+}
+
+.banner a img {
+  width: 100%;
+}
+
+.link {
+  width: 35%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+}
+
+.link ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link ul li img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #ebebeb;
+  display: flex;
+  justify-content: center;
+}
+
+.footerWrap {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footerWrap img {
+  width: 200px;
+  height: 40px;
+}
+
+.ft-right {
+  width: 90%;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal {
+  width: 600px;
+  height: 310px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 1000;
+}
+
+.modal h2 {
+  padding-bottom: 10px;
+}
+
+.modal button {
+  float: right;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #dbdbdb;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 700px;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

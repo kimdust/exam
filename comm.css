@@ -27,18 +27,35 @@ h1 {
   text-align: center;
 }
 
-.a h2 {
+.a h2,
+.b h2 {
   margin: 20px 0;
   font-size: 20px;
 }
 
-.a ul {
+.b h2 {
+  margin-top: 50px;
+}
+
+.a ul,
+.b ul {
   display: flex;
   gap: 20px;
 }
 
+.b ul li {
+  display: flex;
+  flex-direction: column;
+}
+
 .a ul img {
   width: 100%;
+  box-shadow: rgb(219, 219, 219) 0px 0px 5px;
+  border-radius: 10px;
+}
+
+.b ul img {
+  width: 25%;
   box-shadow: rgb(219, 219, 219) 0px 0px 5px;
   border-radius: 10px;
 }
