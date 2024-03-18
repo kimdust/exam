@@ -8,15 +8,15 @@ $(document).ready(function () {
     $(this).find(".gnb-2depth").stop().slideUp();
   });
 
-  let currentIndex = 0;
+  let index = 0;
 
   setInterval(function () {
-    let nextIndex = (currentIndex + 1) % 3;
+    let nextIndex = (index + 1) % 3;
 
-    $(".slider").eq(currentIndex).fadeOut(1200);
+    $(".slider").eq(index).fadeOut(1200);
     $(".slider").eq(nextIndex).fadeIn(1200);
 
-    currentIndex = nextIndex;
+    index = nextIndex;
   }, 3000);
 
   $(".gallery").hide();

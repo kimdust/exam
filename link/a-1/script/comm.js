@@ -16,7 +16,7 @@ $(document).ready(function () {
     index++;
     $(".sliderWrap").animate({ marginTop: -index * 300 + "px" }, 600);
 
-    if (index == 3) {
+    if (index == 0) {
       setTimeout(function () {
         $(".sliderWrap").animate({ marginTop: 0 }, 0);
         index = 0;

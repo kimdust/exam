@@ -73,25 +73,21 @@ body {
   overflow: hidden;
 }
 
-.slideWrap {
+.sliderWrap {
   position: relative;
 }
-
-.slideWrap > div {
+.sliderWrap > div {
   display: none;
 }
-
-.slideWrap > div:first-child {
+.sliderWrap > div:first-child {
   display: block;
 }
-
-.slideWrap .slider {
+.sliderWrap .slider {
   position: absolute;
   left: 0;
   top: 0;
 }
-
-.slideWrap .slider img {
+.sliderWrap .slider img {
   vertical-align: top;
 }
 
