@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   $(".gnb-2depth").hide();
 
   $(".gnb-1depth li").mouseenter(function () {
@@ -10,31 +10,35 @@ $(document).ready(function () {
   });
 
   let index = 0;
+  $(".sliderWrap").append($(".slider").first().clone(true));
 
   setInterval(function () {
-    let nextIndex = (index + 1) % 3;
+    index++;
+    $(".sliderWrap").animate({ marginTop: -index * 400 + "px" }, 600);
 
-    $(".slider").eq(index).fadeOut(1200);
-    $(".slider").eq(nextIndex).fadeIn(1200);
-
-    index = nextIndex;
+    if (index == 3) {
+      setTimeout(function () {
+        $(".sliderWrap").animate({ marginTop: 0 }, 0);
+        index = 0;
+      }, 700);
+    }
   }, 3000);
 
-  $("#gallery").css("background", "#c0c0c0");
   $(".gallery").hide();
+  $("#gallery").css("background", "#d8d8d8");
 
   $("#notice").click(function () {
     $(".notice").show();
     $(".gallery").hide();
-    $("#gallery").css("background", "#c0c0c0");
-    $("#notice").css("background", "#ffa820");
+    $("#notice").css("background", "#61d745");
+    $("#gallery").css("background", "#d8d8d8");
   });
 
   $("#gallery").click(function () {
     $(".gallery").show();
     $(".notice").hide();
-    $("#notice").css("background", "#c0c0c0");
-    $("#gallery").css("background", "#ffa820");
+    $("#gallery").css("background", "#61d745");
+    $("#notice").css("background", "#d8d8d8");
   });
 
   $(".modal").hide();
