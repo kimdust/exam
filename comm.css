@@ -28,22 +28,38 @@ h1 {
 }
 
 .a h2,
-.b h2 {
+.b h2,
+.c h2,
+.d h2,
+.e h2,
+.f h2 {
   margin: 20px 0;
   font-size: 20px;
 }
 
-.b h2 {
+.b h2,
+.c h2,
+.d h2,
+.e h2,
+.f h2 {
   margin-top: 50px;
 }
 
 .a ul,
-.b ul {
+.b ul,
+.c ul,
+.d ul,
+.e ul,
+.f ul {
   display: flex;
   gap: 20px;
 }
 
-.b ul li {
+.b ul li,
+.c ul li,
+.d ul li,
+.e ul li,
+.f ul li {
   display: flex;
   flex-direction: column;
 }
@@ -54,7 +70,11 @@ h1 {
   border-radius: 10px;
 }
 
-.b ul img {
+.b ul img,
+.c ul img,
+.d ul img,
+.e ul img,
+.f ul img {
   width: 25%;
   box-shadow: rgb(219, 219, 219) 0px 0px 5px;
   border-radius: 10px;

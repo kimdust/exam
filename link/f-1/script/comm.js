@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-
-=======
-$(document).ready(function () {
+$(function () {
   $(".gnb-2depth").hide();
-
   $(".gnb-1depth li").mouseenter(function () {
     $(this).find(".gnb-2depth").stop().slideDown();
   });
-
   $(".gnb-1depth li").mouseleave(function () {
     $(this).find(".gnb-2depth").stop().slideUp();
   });
@@ -23,21 +18,26 @@ $(document).ready(function () {
     index = nextIndex;
   }, 3000);
 
-  $("#gallery").css("background", "#c0c0c0");
   $(".gallery").hide();
+  $("#notice").css("background", "#4289f4");
+  $("#notice").css("color", "white");
 
   $("#notice").click(function () {
     $(".notice").show();
     $(".gallery").hide();
-    $("#gallery").css("background", "#c0c0c0");
-    $("#notice").css("background", "#ffa820");
+    $("#notice").css("background", "#4289f4");
+    $("#notice").css("color", "white");
+    $("#gallery").css("background", "#e2e2e2");
+    $("#gallery").css("color", "#666");
   });
 
   $("#gallery").click(function () {
     $(".gallery").show();
     $(".notice").hide();
-    $("#notice").css("background", "#c0c0c0");
-    $("#gallery").css("background", "#ffa820");
+    $("#gallery").css("background", "#4289f4");
+    $("#gallery").css("color", "white");
+    $("#notice").css("background", "#e2e2e2");
+    $("#notice").css("color", "#666");
   });
 
   $(".modal").hide();
@@ -53,4 +53,3 @@ $(document).ready(function () {
     $(".modal-bg").hide();
   });
 });
->>>>>>> a8d32235dd9e057163e4696d11766f3e59f98c1b
